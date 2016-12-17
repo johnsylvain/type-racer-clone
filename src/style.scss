@@ -1,0 +1,45 @@
+		
+html, body {
+	font-family: 'Helvetica Neue', sans-serif;
+}
+.current{
+	color: mediumblue;
+	text-decoration: underline;
+}
+.container{
+	max-width: 500px;
+	width: 100%;
+	margin: 0 auto;
+}
+input {
+	width: 100%;
+	font-size: 1.5em;
+}
+#race-track {
+	margin-top: 10px;
+
+	.lane {
+		width: 100%;
+		position: relative;
+		margin-bottom: 10px;
+	}
+	.track {
+		width: 100%;
+		position: absolute;
+		height: 2px;
+		top: 50%;
+		transform: translateY(-50%);
+		border-bottom: dashed 2px #d3d3d3;
+		z-index: 1;
+	}
+
+	.player {
+		width: 20px;
+		height: 20px;
+		background-color: blue;
+		border-radius: 50%;
+		position: relative;
+		z-index: 100;
+		transition: left 0.3s ease;
+	}
+}
